@@ -1,0 +1,23 @@
+
+.link {
+  cursor: pointer;
+}
+
+.additional {
+  font-weight: normal;
+  font-size: 0.7em;
+}
+
+div.label {
+  font-weight: bold;
+  text-align: right;
+}
+
+div.value {
+  text-align: left;
+}
+
+input.ng-invalid {
+  border-color:#ff0000;
+}
+

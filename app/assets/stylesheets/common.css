@@ -1,0 +1,27 @@
+
+div.table {
+  display: table;
+  font-size: 0.8em;
+}
+
+div.row {
+  display: table-row;
+  width: 100%;
+}
+
+div.cell {
+  display: table-cell;
+  width: 50%;
+}
+
+div.block {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+table {
+  border: none;
+  padding: 2px;
+}
+

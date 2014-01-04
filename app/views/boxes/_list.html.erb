@@ -1,0 +1,14 @@
+          <div id="box_list" class="list" ng-hide="form">
+            <table>
+              <tr>
+                <th>&nbsp;</th>
+                <th>Name</th>
+                <th>Volume</th>
+              </tr>
+              <tr ng-repeat="b in boxes" class="item_row">
+                <td><input type="checkbox" ng-change="pack(b)" ng-model="b.checked" class="check"></td>
+                <td><a class="link edit" ng-click="edit(b)">{{ b.name }}</a> <a class="link delete" ng-click="delete(b)">(x)</a></td>
+                <td>{{ b.volume }}</td>
+              </tr>
+            </table>
+          </div>

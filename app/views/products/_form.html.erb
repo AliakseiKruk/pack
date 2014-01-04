@@ -1,0 +1,30 @@
+          <div id="product_form" class="form" ng-show="form">
+            <form name="productForm">
+              <div class="table">
+                <div class="row name">
+                  <div class="cell label">Name:</div>
+                  <div class="cell value"><input type="text" name="name" ng-change="check_name_options()" required ng-model="src.name"></div>
+                </div>
+                <div class="row width">
+                  <div class="cell label">Width:</div>
+                  <div class="cell value"><input type="number" min="0" required ng-model="src.width"></div>
+                </div>
+                <div class="row height">
+                  <div class="cell label">Height:</div>
+                  <div class="cell value"><input type="number" min="0" required ng-model="src.height"></div>
+                </div>
+                <div class="row depth">
+                  <div class="cell label">Depth:</div>
+                  <div class="cell value"><input type="number" min="0" required ng-model="src.depth"></div>
+                </div>
+                <div class="row weight">
+                  <div class="cell label">Weight:</div>
+                  <div class="cell value"><input type="number" min="0" required ng-model="src.weight"></div>
+                </div>
+                <div class="row stock_level">
+                  <div class="cell label">Stock Level:</div>
+                  <div class="cell value"><input type="number" min="0" required ng-model="src.stock_level"></div>
+                </div>
+              </div>
+            </form>
+          </div>

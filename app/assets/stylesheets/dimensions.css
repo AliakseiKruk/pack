@@ -1,0 +1,47 @@
+
+html, body {height: 100%;}
+
+.main_holder {
+  width: 80%;
+  height: 70%;
+  border: 1px solid #000000;
+  font-family: verdana;
+}
+
+.main_holder .title {
+  display: block;
+  height: 10%;
+  font-weight: bold;
+}
+
+.main_holder .content {
+  display: block;
+  height: 90%;
+  overflow:auto;
+}
+
+.products, .boxes, .packs {
+  display: block;
+  float: left;
+}
+
+.products {
+  width: 60%;
+  height: 60%;
+  background-color: #ddcfb5;
+  color: #3f2800;
+}
+
+.boxes {
+  width: 40%;
+  height: 60%;
+  background-color: #bcc6b7;
+  color: #153d00;
+}
+
+.packs {
+  width: 100%;
+  height: 40%;
+  background-color: #d2d4d0;
+  color: #000000;
+}

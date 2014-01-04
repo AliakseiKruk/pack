@@ -1,0 +1,22 @@
+
+div.list table {
+  font-size: 0.8em;
+  width: 100%;
+}
+
+div.list table th {
+  text-align: left;
+}
+
+div.list table td {
+  vertical-align: top;
+}
+
+div.list table a.edit {
+  font-weight: bold;
+}
+
+div.list table input.short {
+  width: 50px;
+}
+

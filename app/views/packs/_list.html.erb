@@ -1,0 +1,16 @@
+          <div class="list" ng-show="boxes">
+            <table>
+              <tr>
+                <th>Box</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Fullness</th>
+              </tr>
+              <tr ng-repeat="b in boxes" class="item_row">
+                <td>{{ b.num }}</td>
+                <td><div class="block" ng-repeat="p in b.products">{{ p.name }}</div></td>
+                <td><div class="block" ng-repeat="p in b.products">{{ p.qnt }}</div></td>
+                <td>{{ b.full }}%</td>
+              </tr>
+            </table>
+          </div>

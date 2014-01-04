@@ -1,0 +1,20 @@
+          <div id="product_list" class="list" ng-hide="form">
+            <table>
+              <tr class="header">
+                <th>&nbsp;</th>
+                <th>Name</th>
+                <th>W/H/D</th>
+                <th>Weight</th>
+                <th>Stock</th>
+                <th>Order</th>
+              </tr>
+              <tr ng-repeat="p in products" class="item_row">
+                <td><input type="checkbox" ng-change="pack(p)" ng-model="p.checked" ng-disabled="!p.stock_level" class="check"></td>
+                <td><a class="link edit" ng-click="edit(p)">{{ p.name }}</a> <a class="link delete" ng-click="delete(p)">(x)</a></td>
+                <td>{{ p.width }}/{{ p.height }}/{{ p.depth }}</td>
+                <td>{{ p.weight }}</td>
+                <td><span class="available">{{ p.stock_level - p.order }}</span></td>
+                <td><input class="short order" type="number" min="0" required ng-model="p.order" ng-change="check_stock(p)"></td>
+              </tr>
+            </table>
+          </div>

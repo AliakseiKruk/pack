@@ -1,0 +1,11 @@
+          <span class="additional">
+            <span ng-hide="form">
+              &nbsp;|&nbsp;<a class="link load" ng-click="load()">Reload</a>
+              &nbsp;|&nbsp;<a class="link add" ng-click="add()">Add</a>
+            </span>
+            <span ng-show="form">
+              &nbsp;|&nbsp;<a class="link cancel" ng-click="cancel()">Cancel</a>
+              <span ng-hide="boxForm.$invalid">&nbsp;|&nbsp;<a class="link save" ng-click="boxForm.$valid && save()">Save</a></span>
+            </span>
+            &nbsp;|&nbsp;Last request: <span class="message">{{message}}</span>
+          </span>
